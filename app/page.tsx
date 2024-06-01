@@ -6,6 +6,7 @@ import WorkOrderStatus from "@components/WorkOrderStatus";
 import MissingItemsTable from "@components/MissingItemsTable";
 import ToolsAvailability from "@components/ToolsAvailability";
 import RestockItemsTable from "@components/RestockItemsTable";
+import ReceptionSummary from "@components/ReceptionSummary";
 
 export default function Home() {
     return (
@@ -55,6 +56,14 @@ export default function Home() {
                         <Text variant="h1" className="font-bold text-2xl">
                             Reception Summary
                         </Text>
+
+                        <ReceptionSummary
+                            tools={[
+                                { name: "Drill", value: 20 },
+                                { name: "Screwdriver", value: 5 },
+                                { name: "Hammer", value: 10 },
+                            ]}
+                        />
                     </Card>
                 </div>
             </div>
