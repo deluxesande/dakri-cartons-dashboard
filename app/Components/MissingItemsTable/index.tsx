@@ -71,7 +71,7 @@ export default function MissingItemsTable() {
                                 <TableCell
                                     key={column.id}
                                     align={column.align}
-                                    className={`min-w-${column.minWidth}`}
+                                    className={`min-w-${column.minWidth} font-semibold`}
                                     style={{
                                         width:
                                             column.id === "toolRef"

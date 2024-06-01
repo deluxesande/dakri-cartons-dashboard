@@ -82,7 +82,7 @@ export default function StickyTable() {
                                 <TableCell
                                     key={column.id}
                                     align={column.align}
-                                    className={`min-w-${column.minWidth}`}
+                                    className={`min-w-${column.minWidth} font-semibold`}
                                     style={{
                                         width:
                                             column.id === "workOrder" ||

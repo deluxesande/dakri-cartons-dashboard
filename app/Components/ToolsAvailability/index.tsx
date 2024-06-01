@@ -2,6 +2,7 @@ import { FC } from "react";
 import BuildIcon from "@mui/icons-material/Build";
 import PlumbingIcon from "@mui/icons-material/Plumbing";
 import DoughnutChart from "@components/DoughnutChart";
+import Text from "@components/Text";
 
 type ToolsAvailabilityProps = {
     tools: string[];
@@ -37,7 +38,9 @@ const ToolsAvailability: FC<ToolsAvailabilityProps> = ({ tools }) => {
                         {shuffledIcons[index].icon}
                     </div>
                     <div>
-                        <span>{tool}</span>
+                        <Text variant="h2" className="font-semibold">
+                            {tool}
+                        </Text>
                     </div>
                     <DoughnutChart
                         percentage={calculate_percentage()}

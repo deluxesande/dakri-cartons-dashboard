@@ -1,5 +1,6 @@
 import { FC } from "react";
 import ReceiptLongIcon from "@mui/icons-material/ReceiptLong";
+import Text from "@components/Text";
 
 type Tool = {
     name: string;
@@ -16,9 +17,11 @@ const ReceptionSummary: FC<ReceptionSummaryProps> = ({ tools }) => (
             <li key={index} className="flex items-center justify-between">
                 <ReceiptLongIcon fontSize="large" />
                 <div>
-                    <span>{tool.name}</span>
+                    <Text variant="h2" className="font-semibold">
+                        {tool.name}
+                    </Text>
                 </div>
-                <span>{tool.value}</span>
+                <Text>{tool.value}</Text>
             </li>
         ))}
     </ul>

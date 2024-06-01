@@ -87,8 +87,8 @@ export default function Home() {
 
                         <ReceptionSummary
                             tools={[
-                                { name: "Drill", value: 20 },
-                                { name: "Screwdriver", value: 5 },
+                                { name: "Packages Received", value: 20 },
+                                { name: "Processed packages", value: 5 },
                             ]}
                         />
                     </Card>
