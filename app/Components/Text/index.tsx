@@ -28,7 +28,7 @@ export default function Text({
     return (
         <Component
             {...props}
-            className={"text-gray-900 dark:text-gray-100 " + className}
+            className={"text-gray-900 dark:text-gray-900 " + className}
         >
             {children}
         </Component>
