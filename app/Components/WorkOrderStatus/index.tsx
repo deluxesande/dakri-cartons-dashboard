@@ -28,8 +28,8 @@ const WorkOrderStatus = () => {
                 datasets: [
                     {
                         data: [300, 50, 100],
-                        backgroundColor: ["#36A2EB", "#FFCE56", "#FF6384"],
-                        hoverBackgroundColor: ["#36A2EB", "#FFCE56", "#FF6384"],
+                        backgroundColor: ["#008000", "#FFA500", "#FF0000"],
+                        hoverBackgroundColor: ["#008000", "#FFA500", "#FF0000"],
                     },
                 ],
             };
@@ -72,14 +72,14 @@ const WorkOrderStatus = () => {
                                             status.value === "Complete"
                                                 ? "green"
                                                 : status.value === "In Progress"
-                                                ? "blue"
+                                                ? "#FFA500"
                                                 : "red",
                                         boxShadow: `0 0 10px 2px ${
                                             status.value === "Complete"
-                                                ? "rgba(0, 128, 0, 0.2)"
+                                                ? "rgba(0, 128, 0, 0.4)"
                                                 : status.value === "In Progress"
-                                                ? "rgba(0, 0, 255, 0.2)"
-                                                : "rgba(255, 0, 0, 0.2)"
+                                                ? "rgba(255, 165, 0, 0.4)"
+                                                : "rgba(255, 0, 0, 0.4)"
                                         }`,
                                     }}
                                 />

@@ -124,11 +124,11 @@ export default function RestockItemsTable() {
                                                                     boxShadow: `0 0 10px 2px ${
                                                                         value ===
                                                                         "High"
-                                                                            ? "rgba(0, 128, 0, 0.2)"
+                                                                            ? "rgba(0, 128, 0, 0.4)"
                                                                             : value ===
                                                                               "Low"
-                                                                            ? "rgba(0, 0, 255, 0.2)"
-                                                                            : "rgba(255, 0, 0, 0.2)"
+                                                                            ? "rgba(0, 0, 255, 0.4)"
+                                                                            : "rgba(255, 0, 0, 0.4)"
                                                                     }`,
                                                                 }}
                                                             />

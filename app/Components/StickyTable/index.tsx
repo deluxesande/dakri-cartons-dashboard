@@ -28,7 +28,7 @@ const columns: readonly Column[] = [
         label: "Team Member",
         minWidth: 170,
     },
-    { id: "status", label: "Status", minWidth: 100 },
+    { id: "status", label: "Status", minWidth: 120 },
     { id: "duration", label: "Duration", minWidth: 100 },
 ];
 
@@ -132,15 +132,17 @@ export default function StickyTable() {
                                                                 boxShadow: `0 0 10px 2px ${
                                                                     value ===
                                                                     "Complete"
-                                                                        ? "rgba(0, 128, 0, 0.2)"
+                                                                        ? "rgba(0, 128, 0, 0.4)"
                                                                         : value ===
                                                                           "In Progress"
-                                                                        ? "rgba(0, 0, 255, 0.2)"
-                                                                        : "rgba(255, 0, 0, 0.2)"
+                                                                        ? "rgba(0, 0, 255, 0.4)"
+                                                                        : "rgba(255, 0, 0, 0.4)"
                                                                 }`,
                                                             }}
                                                         />
-                                                        <Text>{value}</Text>
+                                                        <Text className="text-sm">
+                                                            {value}
+                                                        </Text>
                                                     </div>
                                                 ) : column.id ===
                                                   "teamMember" ? (

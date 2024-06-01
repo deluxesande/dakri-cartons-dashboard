@@ -1,5 +1,5 @@
 import { FC } from "react";
-import BuildIcon from "@mui/icons-material/Build";
+import ReceiptLongIcon from "@mui/icons-material/ReceiptLong";
 
 type Tool = {
     name: string;
@@ -14,7 +14,7 @@ const ReceptionSummary: FC<ReceptionSummaryProps> = ({ tools }) => (
     <ul className="space-y-10 py-6">
         {tools.map((tool, index) => (
             <li key={index} className="flex items-center justify-between">
-                <BuildIcon fontSize="large" />
+                <ReceiptLongIcon fontSize="large" />
                 <div>
                     <span>{tool.name}</span>
                 </div>
