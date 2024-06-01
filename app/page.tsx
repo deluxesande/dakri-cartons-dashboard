@@ -19,8 +19,8 @@ export default function Home() {
     return (
         <>
             <div className="space-y-6">
-                <div className="flex gap-4 w-[100%]">
-                    <Card className="w-2/3 min-h-48 shadow rounded-md p-6 px-8">
+                <div className="flex flex-wrap gap-4 w-[100%]">
+                    <Card className="w-full lg:w-2/3 min-h-48 shadow rounded-md p-6 px-8">
                         <Text
                             variant="h1"
                             className="font-bold text-2xl flex gap-4 items-center justify-start"
@@ -30,7 +30,7 @@ export default function Home() {
                         </Text>
                         <StickyTable />
                     </Card>
-                    <Card className="w-1/3 min-h-48 shadow rounded-md p-4 px-8">
+                    <Card className="w-full lg:w-1/3 min-h-48 shadow rounded-md p-4 px-8">
                         <Text
                             variant="h1"
                             className="font-bold text-2xl flex gap-4 items-center justify-start"
@@ -42,8 +42,8 @@ export default function Home() {
                     </Card>
                 </div>
 
-                <div className="flex gap-4 ">
-                    <Card className="w-1/3 min-h-48 shadow rounded-md p-4 px-8">
+                <div className="flex flex-wrap gap-4 ">
+                    <Card className="w-full lg:w-1/3 min-h-48 shadow rounded-md p-4 px-8">
                         <Text
                             variant="h1"
                             className="font-bold text-2xl flex gap-4 items-center justify-start"
@@ -53,7 +53,7 @@ export default function Home() {
                         </Text>
                         <MissingItemsTable />
                     </Card>
-                    <Card className="w-2/3 min-h-48 shadow rounded-md p-4 px-8">
+                    <Card className="w-full lg:w-2/3 min-h-48 shadow rounded-md p-4 px-8">
                         <Text
                             variant="h1"
                             className="font-bold text-2xl flex gap-4 items-center justify-start"
@@ -65,8 +65,8 @@ export default function Home() {
                     </Card>
                 </div>
 
-                <div className="flex gap-4 ">
-                    <Card className="w-2/3 min-h-48 shadow rounded-md p-4 px-8">
+                <div className="flex flex-wrap gap-4 ">
+                    <Card className="w-full lg:w-2/3 min-h-48 shadow rounded-md p-4 px-8">
                         <Text
                             variant="h1"
                             className="font-bold text-2xl flex gap-4 items-center justify-start"
@@ -76,7 +76,7 @@ export default function Home() {
 
                         <RestockItemsTable />
                     </Card>
-                    <Card className="w-1/3 min-h-48 shadow rounded-md p-4 px-8">
+                    <Card className="w-full lg:w-1/3 min-h-48 shadow rounded-md p-4 px-8">
                         <Text
                             variant="h1"
                             className="font-bold text-2xl flex gap-4 items-center justify-start"
