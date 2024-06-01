@@ -4,6 +4,7 @@ import Text from "@components/Text";
 import StickyTable from "@components/StickyTable";
 import WorkOrderStatus from "@components/WorkOrderStatus";
 import MissingItemsTable from "@components/MissingItemsTable";
+import ToolsAvailability from "@components/ToolsAvailability";
 
 export default function Home() {
     return (
@@ -35,6 +36,9 @@ export default function Home() {
                         <Text variant="h1" className="font-bold text-2xl">
                             Tools and Equipments Availability
                         </Text>
+                        <ToolsAvailability
+                            tools={["Drill", "Screwdriver", "Hammer"]}
+                        />
                     </Card>
                 </div>
             </div>
