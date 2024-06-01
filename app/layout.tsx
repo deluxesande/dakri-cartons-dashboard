@@ -1,7 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@styles/globals.css";
-import Text from "@components/Text";
+
+import SettingsIcon from "@mui/icons-material/Settings";
+import IconButton from "@mui/material/IconButton";
+import HomeIcon from "@mui/icons-material/Home";
+import BuildIcon from "@mui/icons-material/Build";
+import ReceiptIcon from "@mui/icons-material/Receipt";
+import ListAltIcon from "@mui/icons-material/ListAlt";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,9 +25,28 @@ export default function RootLayout({
         <html lang="en">
             <body className={`${inter.className} h-screen overflow-x-hidden`}>
                 <div className="flex bg-gray-100">
-                    <div className="w-24 h-screen bg-gray-100 p-4 py-8 shadow-lg">
+                    <div className="w-24 h-screen bg-gray-100 p-4 py-8 shadow-lg flex flex-col justify-between items-center">
                         {/* Sidebar content goes here */}
-                        <Text variant="h2">Sidebar</Text>
+                        <div className="w-10 h-10 bg-slate-400"></div>
+
+                        <div className="space-y-4 flex flex-col items-center justify-center">
+                            <IconButton className="rounded-full p-2">
+                                <HomeIcon className="text-3xl" />
+                            </IconButton>
+                            <IconButton className="rounded-full p-2">
+                                <BuildIcon className="text-3xl" />
+                            </IconButton>
+                            <IconButton className="rounded-full p-2">
+                                <ReceiptIcon className="text-3xl" />
+                            </IconButton>
+                            <IconButton className="rounded-full p-2">
+                                <ListAltIcon className="text-3xl" />
+                            </IconButton>
+                        </div>
+
+                        <IconButton className="bg-slate-300 rounded-full p-2">
+                            <SettingsIcon className="text-3xl" />
+                        </IconButton>
                     </div>
                     <div className="flex-1 p-8 h-screen overflow-x-hidden overflow-y-auto">
                         {/* Main content goes here */}
