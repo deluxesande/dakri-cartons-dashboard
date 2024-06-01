@@ -73,7 +73,7 @@ export default function StickyTable() {
     };
 
     return (
-        <div className="w-full overflow-hidden py-6">
+        <div className="w-full overflow-hidden py-6 xl:py-10">
             <TableContainer className="max-h-[440px]">
                 <Table stickyHeader aria-label="sticky table">
                     <TableHead>
