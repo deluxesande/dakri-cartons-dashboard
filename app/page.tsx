@@ -19,7 +19,7 @@ export default function Home() {
     return (
         <>
             <div className="space-y-6">
-                <div className="flex flex-wrap gap-4 w-[100%]">
+                <div className="flex flex-wrap lg:flex-nowrap gap-4 w-[100%]">
                     <Card className="w-full lg:w-2/3 min-h-48 shadow rounded-md p-6 px-8">
                         <Text
                             variant="h1"
@@ -42,7 +42,7 @@ export default function Home() {
                     </Card>
                 </div>
 
-                <div className="flex flex-wrap gap-4 ">
+                <div className="flex flex-wrap lg:flex-nowrap gap-4 ">
                     <Card className="w-full lg:w-1/3 min-h-48 shadow rounded-md p-4 px-8">
                         <Text
                             variant="h1"
@@ -65,7 +65,7 @@ export default function Home() {
                     </Card>
                 </div>
 
-                <div className="flex flex-wrap gap-4 ">
+                <div className="flex flex-wrap lg:flex-nowrap gap-4 ">
                     <Card className="w-full lg:w-2/3 min-h-48 shadow rounded-md p-4 px-8">
                         <Text
                             variant="h1"
